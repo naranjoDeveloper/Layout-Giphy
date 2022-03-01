@@ -1,0 +1,32 @@
+.btn1{
+    background-color: #303240 !important;
+    outline: none;
+}
+
+.drop1{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.buscador{
+    width: 85%;
+}
+
+.buscador .card-body{
+    height: 12vh;
+}
+
+.buscador input{
+    height: 7vh;
+    width: 80%;
+}
+
+.buscador button{
+    height: 8vh;
+    width: 19%;
+    padding: 0%;
+}
+
+.bg1{
+    background-color: #303D40;
+}
