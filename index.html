@@ -55,14 +55,19 @@
 
         <div class="container my-4 buscador">
             <div class="card-body bg1">
-                <input type="text" placeholder="Buscar Gifs">
-                <button class="btn1 text-white">Buscar Gifs</button>
+                <input id="input" type="text" placeholder="Buscar Gifs">
+                <button  class="btn1 text-white" id="buscar">Buscar Gifs</button>
             </div>
+            <ul class="list-group list-group-flush" style="display: none;" id="suggest">
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
         </div>
 
     </div>
 
     <div class="container">
+        <div class="row" id="searchResults">
+        </div>
         <div class="row" id="results">
         </div>
     </div>
