@@ -43,7 +43,7 @@ let suggest = async (val) => {
         for(let i = 0; i < names.length; i++){
             listaSugerencias.innerHTML += `
                 <li class="list-group-item""> 
-                <a href="#" onclick="input.value='${names[i]}'; " > ${names[i]} </a>
+                <a class="btn btn-lg btn-dark" href="#" onclick="input.value='${names[i]}'; " > ${names[i]} </a>
             </li>
                 `
         }
@@ -60,7 +60,7 @@ let getData = async () => {
         const apiKey = 'VuIHH7Mn8FelC4tUFaaKyVkZD5eQGAIg';
 
 
-        const url = `https://api.giphy.com/v1/gifs/trending?api_key=${apiKey}&limit=${1}`;
+        const url = `https://api.giphy.com/v1/gifs/trending?api_key=${apiKey}`;
         const response = await fetch(url);
         const body = await response.text();
 
@@ -96,7 +96,7 @@ let search = async (val) => {
         const apiKey = 'VuIHH7Mn8FelC4tUFaaKyVkZD5eQGAIg';
 
 
-        const url = `https://api.giphy.com/v1/gifs/search?q=${val}&api_key=${apiKey}&limit=${5}`;
+        const url = `https://api.giphy.com/v1/gifs/search?q=${val}&api_key=${apiKey}&limit=${10}`;
 
 
         const response = await fetch(url);
